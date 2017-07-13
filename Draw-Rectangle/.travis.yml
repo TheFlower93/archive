@@ -1,0 +1,11 @@
+language: c++
+c++ :
+ - 11
+ - 14
+ - 17
+
+before_script:
+ - composer install --no-interaction
+
+script:
+ - vendor/bin/c++unit
